@@ -16,6 +16,11 @@ function Skills() {
         boxShadow: `0px 0px 30px ${theme.primary30}`
     }
 
+    const sortedSkills = React.useMemo(
+        () => [...skillsData].sort((a, b) => a.localeCompare(b)),
+        []
+    );
+
     return (
         <div className="skills" id="skills" style={{ backgroundColor: theme.secondary }}>
             <div className="skillsHeader">
@@ -32,7 +37,7 @@ function Skills() {
                         play={true}
                         direction="left"
                     >
-                        {skillsData.map((skill, id) => (
+                        {sortedSkills.map((skill, id) => (
                             <div className="skill--box" key={id} style={skillBoxStyle}>
                                 <img src={skillsImage(skill)} alt={skill} />
                                 <h3 style={{ color: theme.tertiary }}>

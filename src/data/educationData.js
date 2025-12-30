@@ -25,27 +25,31 @@ export const educationData = [
         institution: 'IIEST, Shibpur',
         course: 'Master of Technology (VLSI Design)',
         startYear: '2020',
-        endYear: '2022'
+        endYear: '2022',
+        marks: '9.53'
     },
     {
         id: 2,
         institution: 'M A K A University of Technology, West Bengal',
         course: 'Bachelor of Technology (ECE)',
         startYear: '2014',
-        endYear: '2018'
+        endYear: '2018',
+        marks: '8.27'
     },
     {
         id: 3,
         institution: 'West Bengal Council of Higher Secondary Education',
         course: 'Higher Secondary (10+2)',
-        startYear: '2011',
-        endYear: '2013'
+        startYear: '',
+        endYear: '2013',
+        marks: '84.00'
     },
     {
         id: 4,
         institution: 'West Bengal Board of Secondary Education',
         course: 'Secondary (10th)',
-        startYear: '2009',
-        endYear: '2011'
+        startYear: '',
+        endYear: '2011',
+        marks: '83.50'
     },
 ]

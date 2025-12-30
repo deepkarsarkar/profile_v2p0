@@ -2,7 +2,7 @@
   "name": "profile_v2p0",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://deepkarsarkar.github.io/profile-v2/",
+  "homepage": "https://deepkarsarkar.github.io/profile_v2p0",
   "dependencies": {
     "@material-ui/core": "^4.12.2",
     "@material-ui/icons": "^4.11.2",

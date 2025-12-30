@@ -10,14 +10,20 @@ import { socialsData } from '../../data/socialsData';
 
 import profilePic from '../../assets/jpg/profile_pic.jpg'
 
-import {
-    FaTwitter,
-    FaLinkedin,
-    FaGithub,
-    FaYoutube,
-    FaBlogger,
-} from 'react-icons/fa';
-import { FaXTwitter } from "react-icons/fa6";
+// import {
+//     FaTwitter,
+//     // FaLinkedinIn,
+//     // FaGithub,
+//     FaYoutube,
+//     FaBloggerB,
+//     FaRedditAlien,
+//     FaStackOverflow,
+//     FaCodepen,
+//     FaInstagram,
+//     FaGitlab,
+//     FaMediumM,
+// } from 'react-icons/fa';
+import { FaLinkedin, FaLinkedinIn, FaGithub, FaMedium, FaXTwitter } from "react-icons/fa6";
 
 function Landing() {
     const { theme, drawerOpen } = useContext(ThemeContext);
@@ -104,7 +110,20 @@ function Landing() {
                                 />
                             </a>
                         )}
-                        {socialsData.twitter && (
+                        {socialsData.medium && (
+                            <a
+                                href={socialsData.medium}
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <FaMedium
+                                    className='landing--social'
+                                    style={{ color: theme.secondary }}
+                                    aria-label='Medium'
+                                />
+                            </a>
+                        )}
+                        {/* {socialsData.twitter && (
                             <a
                                 href={socialsData.twitter}
                                 target='_blank'
@@ -142,7 +161,7 @@ function Landing() {
                                     aria-label='Blogger'
                                 />
                             </a>
-                        )}
+                        )} */}
                     </div>
                 </div>
                 <img
@@ -169,8 +188,9 @@ function Landing() {
                         <div className='lcr-buttonContainer'>
                             {headerData.resumePdf && (
                                 <a
-                                    href={headerData.resumePdf}
+                                    // href={headerData.resumePdf}
                                     // download='resume'
+                                    href="https://drive.google.com/file/d/1opwo80qhXvfv8v5YOE18UoP0zz3nem/view?usp=sharing"
                                     target='_blank'
                                     rel='noreferrer'
                                 >

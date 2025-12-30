@@ -78,6 +78,16 @@
     font-weight: 600;
 }
 
+.education-details > span {
+    font-family: var(--primaryFont);
+    font-size: 0.87rem;
+    font-weight: 700;
+    text-align: right;
+    border-radius: 10px;
+    border-width: 2%;
+    padding: 1% 2%;
+}
+
 .education-image {
     box-sizing: border-box;
     padding: 1rem;

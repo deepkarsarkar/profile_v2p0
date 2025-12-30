@@ -4,20 +4,20 @@ import CloseIcon from '@material-ui/icons/Close';
 import axios from 'axios';
 import isEmail from 'validator/lib/isEmail';
 import { makeStyles } from '@material-ui/core/styles';
-import {
-    FaTwitter,
-    FaLinkedinIn,
-    FaGithub,
-    FaYoutube,
-    FaBloggerB,
-    FaRedditAlien,
-    FaStackOverflow,
-    FaCodepen,
-    FaInstagram,
-    FaGitlab,
-    FaMediumM,
-} from 'react-icons/fa';
-import { FaXTwitter } from "react-icons/fa6";
+// import {
+//     FaTwitter,
+//     // FaLinkedinIn,
+//     // FaGithub,
+//     FaYoutube,
+//     FaBloggerB,
+//     FaRedditAlien,
+//     FaStackOverflow,
+//     FaCodepen,
+//     FaInstagram,
+//     FaGitlab,
+//     FaMediumM,
+// } from 'react-icons/fa';
+import { FaLinkedin, FaLinkedinIn, FaGithub, FaMedium, FaXTwitter } from "react-icons/fa6";
 import { AiOutlineSend, AiOutlineCheckCircle } from 'react-icons/ai';
 import { FiPhone, FiAtSign } from 'react-icons/fi';
 import { HiOutlineLocationMarker, HiOutlineHome } from 'react-icons/hi';
@@ -309,7 +309,7 @@ function Contacts() {
                                 <HiOutlineLocationMarker />
                             </div>
                             <p style={{ color: theme.tertiary }}>
-                                {contactsData.address1.split(", ")[0]}, {contactsData.address1.split(", ")[1]}, <br/>
+                                {contactsData.address1.split(", ")[0]}, {contactsData.address1.split(", ")[1]}, <br />
                                 {contactsData.address1.split(", ")[2]}
                             </p>
                         </div>
@@ -323,14 +323,14 @@ function Contacts() {
                         </div>
 
                         <div className='socialmedia-icons'>
-                            {socialsData.twitter && (
+                            {socialsData.linkedIn && (
                                 <a
-                                    href={socialsData.twitter}
+                                    href={socialsData.linkedIn}
                                     target='_blank'
                                     rel='noreferrer'
                                     className={classes.socialIcon}
                                 >
-                                    <FaXTwitter aria-label='X' />
+                                    <FaLinkedinIn aria-label='LinkedIn' />
                                 </a>
                             )}
                             {socialsData.github && (
@@ -343,14 +343,14 @@ function Contacts() {
                                     <FaGithub aria-label='GitHub' />
                                 </a>
                             )}
-                            {socialsData.linkedIn && (
+                            {/* {socialsData.twitter && (
                                 <a
-                                    href={socialsData.linkedIn}
+                                    href={socialsData.twitter}
                                     target='_blank'
                                     rel='noreferrer'
                                     className={classes.socialIcon}
                                 >
-                                    <FaLinkedinIn aria-label='LinkedIn' />
+                                    <FaXTwitter aria-label='X' />
                                 </a>
                             )}
                             {socialsData.instagram && (
@@ -362,7 +362,7 @@ function Contacts() {
                                 >
                                     <FaInstagram aria-label='Instagram' />
                                 </a>
-                            )}
+                            )} */}
                             {socialsData.medium && (
                                 <a
                                     href={socialsData.medium}
@@ -370,10 +370,10 @@ function Contacts() {
                                     rel='noreferrer'
                                     className={classes.socialIcon}
                                 >
-                                    <FaMediumM aria-label='Medium' />
+                                    <FaMedium aria-label='Medium' />
                                 </a>
                             )}
-                            {socialsData.blogger && (
+                            {/* {socialsData.blogger && (
                                 <a
                                     href={socialsData.blogger}
                                     target='_blank'
@@ -432,7 +432,7 @@ function Contacts() {
                                 >
                                     <FaGitlab aria-label='GitLab' />
                                 </a>
-                            )}
+                            )} */}
                         </div>
                     </div>
                 </div>

@@ -6,6 +6,8 @@ import Fade from 'react-reveal/Fade';
 import placeholder from '../../../assets/png/placeholder.png';
 import './SingleProject.css';
 
+import { projectsData } from '../../../data/projectsData';
+
 function SingleProject({ id, name, tech, client, duration, tags, responsibilities, image, theme }) {
     const useStyles = makeStyles((t) => ({
         iconBtn: {
@@ -98,12 +100,18 @@ function SingleProject({ id, name, tech, client, duration, tags, responsibilitie
                     }}
                 >
                     <span><strong>Technology : </strong>{tech}</span><br />
-                    <span><strong>Client : </strong>{client}</span><br/>
+                    <span><strong>Client : </strong>{client}</span><br />
                     <span><strong>Duration : </strong>{duration}</span><br />
-                    <strong>Design Size</strong>
-                    {tags.map((tag, id) => (
-                        <span key={id}>&emsp;{tag}</span>
-                    ))}
+                    {/* {tags.length} | ~{tags[0]}~ | ~~ */}
+                    {(tags.length > 0 && tags[0]?.trim() !== "") ?
+                        <>
+                            <strong>Design Size</strong><br />
+                            {tags.map((tag, id) => (
+                                <span key={id}><ul><li>{tag}</li></ul></span>
+                            ))}
+                        </>
+                        : ""
+                    }
                 </p>
                 {/* <div
                     className='project--lang'
@@ -125,7 +133,7 @@ function SingleProject({ id, name, tech, client, duration, tags, responsibilitie
                 >
                     <strong>Responsibilties</strong>
                     {responsibilities.map((responsibility, id) => (
-                        <span key={id}>&emsp;{responsibility}</span>
+                        <span key={id}><ul><li>{responsibility}</li></ul></span>
                     ))}
                 </p>
             </div>
