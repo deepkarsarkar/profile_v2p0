@@ -65,6 +65,7 @@ function Projects() {
                                     client={project.client}
                                     duration={project.duration}
                                     tags={project.tags}
+                                    tools={project.tools}
                                     responsibilities={project.responsibilities}
                                     // code={project.code}
                                     // demo={project.demo}

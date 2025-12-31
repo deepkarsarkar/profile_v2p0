@@ -25,7 +25,7 @@ export const experienceData = [
         company: 'PravegaSemi Pvt. Ltd.',
         jobtitle: 'VLSI Design Engineer',
         startYear: 'Feb 2025',
-        endYear: 'Present'
+        endYear: ''
     },
     {
         id: 2,

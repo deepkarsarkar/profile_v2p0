@@ -19,7 +19,8 @@ export const projectsData = [
         // projectDesc: 'This project aims to build an employee management system that consolidates all information of a company',
         tags: ['Block 1: ~90k flops & 3 clocks', 'Block 2: ~145k flops & 3 clocks'],
         // code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        // demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        tools: ['Cadence Modus','Cadence Xcelium','Cadence SimVision'],
         responsibilities: ['Generated ATPG Patterns', 'Dumping QSCAN collaterals (PATDB,ICD,STIL flat model) per silicon/test requirements','Validated and release LEF/DEF files','Automated generation and validation of Qscan test collaterals using industry-standard EDA tor (Mentor Iessent)','Debugged and resolved common QSCAN generation issues such as missing collateral, B2X errors, and signature mismatches, by cross-validating tool flows and log files','Worked closely on simulating the atpg pattern','Changed constraints with different values and continued ATPG run as top-up runs'],
         image: one
     },
@@ -32,7 +33,7 @@ export const projectsData = [
         // projectDesc: 'This project aims to build an employee management system that consolidates all information of a company',
         tags: ['Block 1: ~90k flops & 3 clocks', 'Block 2: ~145k flops & 3 clocks'],
         // code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        // demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
         responsibilities: ['Pattern generation','Timing & No-timing simulation'],
         image: one
     },

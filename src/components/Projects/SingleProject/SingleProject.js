@@ -8,7 +8,7 @@ import './SingleProject.css';
 
 import { projectsData } from '../../../data/projectsData';
 
-function SingleProject({ id, name, tech, client, duration, tags, responsibilities, image, theme }) {
+function SingleProject({ id, name, tech, client, duration, tags, responsibilities, image, theme, demo, tools }) {
     const useStyles = makeStyles((t) => ({
         iconBtn: {
             display: 'flex',
@@ -52,7 +52,7 @@ function SingleProject({ id, name, tech, client, duration, tags, responsibilitie
                     </h2>
                     <img src={image ? image : placeholder} alt={name} />
                     <div className='project--showcaseBtn'>
-                        {/* <a
+                        <a
                             href={demo}
                             target='_blank'
                             rel='noreferrer'
@@ -63,7 +63,7 @@ function SingleProject({ id, name, tech, client, duration, tags, responsibilitie
                                 .replace(' ', '-')
                                 .toLowerCase()}-demo`}
                         >
-                            <FaPlay
+                            <FaCode
                                 id={`${name
                                     .replace(' ', '-')
                                     .toLowerCase()}-demo`}
@@ -71,7 +71,7 @@ function SingleProject({ id, name, tech, client, duration, tags, responsibilitie
                                 aria-label='Demo'
                             />
                         </a>
-                        <a
+                        {/* <a
                             href={code}
                             target='_blank'
                             rel='noreferrer'
@@ -99,14 +99,15 @@ function SingleProject({ id, name, tech, client, duration, tags, responsibilitie
                         color: theme.tertiary,
                     }}
                 >
-                    <span><strong>Technology : </strong>{tech}</span><br />
-                    <span><strong>Client : </strong>{client}</span><br />
+                    {/* <span><strong>Technology : </strong>{tech}</span><br />
+                    <span><strong>Client : </strong>{client}</span><br /> */}
+                    {client}&emsp;|&emsp;{tech}<br/><br/>
                     <span><strong>Duration : </strong>{duration}</span><br />
                     {/* {tags.length} | ~{tags[0]}~ | ~~ */}
                     {(tags.length > 0 && tags[0]?.trim() !== "") ?
                         <>
-                            <strong>Design Size</strong><br />
-                            {tags.map((tag, id) => (
+                            <strong>Design Size</strong><br/>
+                            {tags?.map((tag, id) => (
                                 <span key={id}><ul><li>{tag}</li></ul></span>
                             ))}
                         </>
@@ -120,7 +121,7 @@ function SingleProject({ id, name, tech, client, duration, tags, responsibilitie
                         color: theme.tertiary80,
                     }}
                 >
-                    {tags.map((tag, id) => (
+                    {tags?.map((tag, id) => (
                         <span key={id}>{tag}</span>
                     ))}
                 </div> */}
@@ -131,9 +132,14 @@ function SingleProject({ id, name, tech, client, duration, tags, responsibilitie
                         color: theme.tertiary,
                     }}
                 >
-                    <strong>Responsibilties</strong>
-                    {responsibilities.map((responsibility, id) => (
+                    {/* <strong>Responsibilties</strong>
+                    {responsibilities?.map((responsibility, id) => (
                         <span key={id}><ul><li>{responsibility}</li></ul></span>
+                    ))} */}
+                    <strong>Tools Used:</strong>
+                    {/* {`${tools}`} */}
+                    {tools?.map((tool, id) => (
+                        <span key={id}><ul><li>{tool}</li></ul></span>
                     ))}
                 </p>
             </div>

@@ -31,12 +31,17 @@ function EducationCard({ id, institution, course, startYear, endYear, marks }) {
                 </div>
                 <div className="education-details">
                     {/* (startYear?.trim() !== "") ? <h6 style={{ color: theme.primary }}>{startYear}-{endYear}</h6> : <h6 style={{ color: theme.primary }}>{endYear}</h6> */}
-                    <h6 style={{ color: theme.primary }}>
-                        {startYear === "" ? endYear : `${startYear}-${endYear}`}
-                    </h6>
-                    <span style={{ color: theme.tertiary, backgroundColor: theme.primary }}>
-                        {marks < 10 ? `${marks} / 10` : `${marks} %`}
-                    </span>
+                    {/* <div className="education-details-row"> */}
+                        <h6 style={{ color: theme.primary }}>
+                            {startYear === "" ? endYear : `${startYear} - ${endYear}`}
+                            {/* <span style={{ color: theme.tertiary, backgroundColor: theme.primary }}>
+                            {marks < 10 ? `${marks} / 10` : `${marks} %`}
+                        </span> */}
+                        </h6>
+                        {/* <span style={{ color: theme.tertiary, backgroundColor: theme.primary }}>
+                            {marks < 10 ? `${marks}/10` : `${marks}%`}
+                        </span> */}
+                    {/* </div> */}
                     <h4 style={{ color: theme.tertiary }}>{course}</h4>
                     <h5 style={{ color: theme.tertiary80 }}>{institution}</h5>
                 </div>
