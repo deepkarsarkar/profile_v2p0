@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/profile_v2p0/static/css/main.a5d05f90.css",
-    "main.js": "/profile_v2p0/static/js/main.d0147513.js",
+    "main.js": "/profile_v2p0/static/js/main.d4023bdd.js",
     "static/js/453.9fe7eb23.chunk.js": "/profile_v2p0/static/js/453.9fe7eb23.chunk.js",
     "static/media/four.svg": "/profile_v2p0/static/media/four.797cac62273af3693cd624c5f58e33b5.svg",
     "static/media/three.svg": "/profile_v2p0/static/media/three.d4f751d1b799f45195a256c314211dfe.svg",
@@ -15,12 +15,17 @@
     "static/media/expPurple.svg": "/profile_v2p0/static/media/expPurple.96a6bf6351cdcf2af2a140c708d9912b.svg",
     "static/media/expYellow.svg": "/profile_v2p0/static/media/expYellow.22be417c6d1c281c3b4b6ee0e80f0a5f.svg",
     "static/media/profile_pic.jpg": "/profile_v2p0/static/media/profile_pic.64ec377c403d5531db33.jpg",
+    "static/media/tcs_logo.png": "/profile_v2p0/static/media/tcs_logo.3b11b059975ab0ec786c.png",
     "static/media/five.svg": "/profile_v2p0/static/media/five.89b924ebc79f37d920813b8e786786ba.svg",
+    "static/media/ps_logo.png": "/profile_v2p0/static/media/ps_logo.a8560f0eec2e533da1fa.png",
     "static/media/seven.svg": "/profile_v2p0/static/media/seven.3168c0a56a95f988490da0dc09e72c52.svg",
     "static/media/two.svg": "/profile_v2p0/static/media/two.721a06723367c73fc2cee44b09f50c67.svg",
+    "static/media/male.svg": "/profile_v2p0/static/media/male.c1084eb028bfb937193073be3d8ccd5f.svg",
+    "static/media/female.svg": "/profile_v2p0/static/media/female.1b990012d6fc7212c059c6ea1cf80a46.svg",
     "static/media/BestermindRegular.ttf": "/profile_v2p0/static/media/BestermindRegular.e58a192233afb30a6a59.ttf",
     "static/media/one.svg": "/profile_v2p0/static/media/one.a3146128c9b6ecbd1ffa523e1f3f734d.svg",
     "static/media/eight.svg": "/profile_v2p0/static/media/eight.98202b95d509cbc0b88d686146465bf8.svg",
+    "static/media/iiests_logo.png": "/profile_v2p0/static/media/iiests_logo.bfa279fdf79048d94a89.png",
     "static/media/six.svg": "/profile_v2p0/static/media/six.bd765919ce8b5fdbd8ba7825c6eae897.svg",
     "static/media/contactsBlack.svg": "/profile_v2p0/static/media/contactsBlack.888fb5429daafbdcf2e79d16adf73902.svg",
     "static/media/contactsBlue.svg": "/profile_v2p0/static/media/contactsBlue.e1eaa2515ae80474560d0bad23694e02.svg",
@@ -30,6 +35,7 @@
     "static/media/contactsPurple.svg": "/profile_v2p0/static/media/contactsPurple.e812446bf12a444a13b031404e3c7e84.svg",
     "static/media/contactsRed.svg": "/profile_v2p0/static/media/contactsRed.4953be02a00972428941a6d32e9060e7.svg",
     "static/media/contactsYellow.svg": "/profile_v2p0/static/media/contactsYellow.85ae60233c8d2cd5f19b157ebeeaa83b.svg",
+    "static/media/pwc_logo.png": "/profile_v2p0/static/media/pwc_logo.b1163d616e87ba452397.png",
     "static/media/pinkTheme-girl.svg": "/profile_v2p0/static/media/pinkTheme-girl.50c0c02f742987d657bca43e65de5ee0.svg",
     "static/media/purpleTheme-girl.svg": "/profile_v2p0/static/media/purpleTheme-girl.56852c94d9d4c3b332756c31029200e1.svg",
     "static/media/yellowTheme-girl.svg": "/profile_v2p0/static/media/yellowTheme-girl.641f7b0b3d73b02df6c112988684e84b.svg",
@@ -148,11 +154,11 @@
     "static/media/vuetifyjs.svg": "/profile_v2p0/static/media/vuetifyjs.8a22a3ec81ad62e97094feab6e7ee0fb.svg",
     "static/media/bulma.svg": "/profile_v2p0/static/media/bulma.5910d4416e077262d0264109649ab214.svg",
     "main.a5d05f90.css.map": "/profile_v2p0/static/css/main.a5d05f90.css.map",
-    "main.d0147513.js.map": "/profile_v2p0/static/js/main.d0147513.js.map",
+    "main.d4023bdd.js.map": "/profile_v2p0/static/js/main.d4023bdd.js.map",
     "453.9fe7eb23.chunk.js.map": "/profile_v2p0/static/js/453.9fe7eb23.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a5d05f90.css",
-    "static/js/main.d0147513.js"
+    "static/js/main.d4023bdd.js"
   ]
 }
